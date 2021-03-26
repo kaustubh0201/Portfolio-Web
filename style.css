@@ -8,12 +8,17 @@
 }
 
 /* navbar styling */
-.navabr {
+.navbar {
     position: fixed;
-    background: crimson;
+    /* background: crimson; */
     width: 100%;
-    padding: 15px 0;
+    padding: 30px 0;
     font-family: 'Poppins', sans-serif;
+}
+
+.navbar.sticky{
+    padding: 30px 0;
+    background: crimson;
 }
 
 .max-width{
@@ -22,28 +27,39 @@
     margin: auto;
 }
 
-.navabr .max-width{
+.navbar .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navabr .logo a{
+.navbar .logo a{
     color: #fff;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 600;
+    letter-spacing: 2px;
 }
 
-.navabr .menu li{
+.navbar .logo a span{
+    color: crimson;
+}
+
+.navbar .menu li{
     list-style: none;
     display: inline-block;
 }
 
-.navabr .menu li a{
+.navbar .menu li a{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: yellow;
+    border-bottom: 1px solid yellow;
 }
 
 /* home section styling */
@@ -55,4 +71,29 @@
     color: #fff;
     min-height: 500px;
     font-family: 'Poppins', sans-serif;
+}
+
+
+.home .max-width{
+    margin: auto 0 auto 850px;
+}
+
+.home .home-content .text1{
+    font-size: 27px;
+}
+
+.home .home-content .text2{
+    font-size: 75px;
+    font-weight: 60o;
+    margin-left: -3px;
+}
+
+.home .home-content .text3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text3 span{
+    color: crimson;
+    font-weight: 500;
 }
