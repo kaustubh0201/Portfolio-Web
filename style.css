@@ -12,7 +12,14 @@
     position: fixed;
     background: crimson;
     width: 100%;
+    padding: 15px 0;
     font-family: 'Poppins', sans-serif;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
 }
 
 .navabr .max-width{
@@ -34,4 +41,18 @@
 
 .navabr .menu li a{
     color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+/* home section styling */
+
+.home{
+    display: flex;
+    background: url("images/bck.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Poppins', sans-serif;
 }
