@@ -119,17 +119,14 @@
     font-weight: 500;
 }
 
-/* about section styling */
+/* all similar section code */
+
 
 section{
     padding: 100px 0;
 }
 
-.about{
-    font-family: 'Poppins', sans-serif;
-}
-
-.about .title{
+section .title{
     position: relative;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -139,7 +136,7 @@ section{
     padding-bottom: 20px;
 }
 
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -150,8 +147,7 @@ section{
     transform: translateX(-50%);
 }
 
-.about .title::after{
-    content: "who i am";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -162,7 +158,18 @@ section{
     transform: translateX(-50%);
 }
 
-.about .about-content{
+
+/* about section styling */
+
+.about, .project{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title::after{
+    content: "who i am";
+}
+
+.about .about-content, .project .project-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -216,7 +223,64 @@ section{
     background: none;
 }
 
+/* project section styling */
+
+.project{
+    color: #fff;
+    background: #111;
+}
+
+.project .title::before{
+    background: #fff;
+}
+
+.project .title::after{
+    background: #111;
+    content: "what i have made";
+}
+
+.project .project-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+
+}
+
+.project .project-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.project .project-content .card:hover{
+    background: crimson;
+}
+
+.project .project-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.project .project-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+
+}
+
+.project .project-content .card:hover i{
+    color: #fff;
+}
+
+.project .project-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
 /* responsive media query start */
+
 
 @media (max-width: 1342px){
     .home .max-width{
@@ -224,16 +288,14 @@ section{
     }
 }
 
-@media (max-width: 880px) {
-
+@media (max-width: 1100px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
 }
 
 @media (max-width: 880px) {
-
-    .max-width{
-        padding: 0 50px;
-    }
-
     .menu-btn{
         display: block;
         z-index: 999;
@@ -279,5 +341,23 @@ section{
 
     .home .home-content .text3{
         font-size: 35px;
+    }
+
+    .max-width{
+        max-width: 800px;
+    }
+
+    .about .about-content .column{
+        width: 100%;
+    }
+
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right{
+        flex: 100%;
     }
 }
