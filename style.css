@@ -105,7 +105,7 @@
 
 .home .home-content .text2{
     font-size: 75px;
-    font-weight: 60o;
+    font-weight: 600;
     margin-left: -3px;
 }
 
@@ -339,6 +339,8 @@ section .title::after{
         font-size: 70px;
     }
 
+    
+
     .home .home-content .text3{
         font-size: 35px;
     }
@@ -359,5 +361,11 @@ section .title::after{
 
     .about .about-content .right{
         flex: 100%;
+    }
+}
+
+@media (max-width: 470px) {
+    .home .home-content .text2{
+        font-size: 60px;
     }
 }
