@@ -368,4 +368,9 @@ section .title::after{
     .home .home-content .text2{
         font-size: 60px;
     }
+
+    .about .about-content .left img{
+        height: 300px;
+        width: 300px;
+    }
 }
