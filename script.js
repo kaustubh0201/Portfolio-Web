@@ -25,7 +25,7 @@ $(document).ready(function(){
         autoplayHoverPause: true,
         responsive: {
             0:{
-                ite,s: 1,
+                items: 1,
                 nav: false
             },
             600:{
