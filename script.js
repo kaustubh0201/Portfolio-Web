@@ -9,6 +9,22 @@ $(document).ready(function(){
         }
     });
 
+    // typing animation script
+
+    var typed = new Typed(".typing", {
+        strings: ["Software Engineer", "Android Developer", "Web Developer", "Blockchain Developer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    var typed = new Typed(".typing-2", {
+        strings: ["Software Engineer", "Android Developer", "Web Developer", "Blockchain Developer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
     // toggle menu/navbar script
 
     $('.menu-btn').click(function(){

@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* navbar styling */
 .navbar {
     position: fixed;
@@ -121,7 +125,7 @@
 
 /* all similar section code */
 
-.about, .project, .skills, .teams, .contact{
+.about, .project, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -525,6 +529,11 @@ section .title::after{
     transition: all 0.3s ease;
 }
 
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 20px 23px;
+}
 
 
 /* responsive media query start */
