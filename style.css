@@ -61,6 +61,7 @@ html{
 }
 
 .navbar .menu li a{
+    display: block;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -97,7 +98,6 @@ html{
     min-height: 500px;
     font-family: 'Poppins', sans-serif;
 }
-
 
 .home .max-width{
     margin: auto 0 auto 850px;
