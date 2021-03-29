@@ -233,6 +233,10 @@ section .title::after{
     background: #fff;
 }
 
+.project .project-content{
+    padding-top: 40px;
+}
+
 .project .title::after, .teams .title::after{
     background: #111;
     content: "what i have made";
