@@ -121,7 +121,7 @@
 
 /* all similar section code */
 
-.about, .project, .skills{
+.about, .project, .skills, .teams{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -229,11 +229,11 @@ section .title::after{
     background: #111;
 }
 
-.project .title::before{
+.project .title::before, .teams .title::before{
     background: #fff;
 }
 
-.project .title::after{
+.project .title::after, .teams .title::after{
     background: #111;
     content: "what i have made";
 }
@@ -345,10 +345,45 @@ section .title::after{
     width: 40%;
 }
 
+/* teams section styling */
+
+.teams{
+    color: #fff;
+    background: #111;
+}
+
+.teams .title::after{
+    content: "who with me";
+}
+
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+}
+
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+}
+
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* responsive media query start */
 
 
 @media (max-width: 1342px){
+
     .home .max-width{
         margin-left: 0px;
     }
@@ -436,6 +471,11 @@ section .title::after{
 @media (max-width: 640px) {
     .project .project-content .card{
         width: 100%;
+    }
+
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 40px;
     }
 }
 
