@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+    // for navbar fixation and its transition
     $(window).scroll(function(){
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
@@ -7,6 +8,7 @@ $(document).ready(function(){
             $('.navbar').removeClass("sticky");
         }
     });
+
     // toggle menu/navbar script
 
     $('.menu-btn').click(function(){

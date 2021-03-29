@@ -121,6 +121,16 @@
 
 /* all similar section code */
 
+.about, .project, .skills{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content, .project .project-content, .skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 
 section{
     padding: 100px 0;
@@ -161,19 +171,8 @@ section .title::after{
 
 /* about section styling */
 
-.about, .project{
-    font-family: 'Poppins', sans-serif;
-}
-
 .about .title::after{
     content: "who i am";
-}
-
-.about .about-content, .project .project-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .about .about-content .left{
@@ -278,6 +277,73 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+/* project section styling */
+
+.skills .title::after{
+    content: "what i know";
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills .skills-content .right .html::before{
+    width: 80%;
+}
+
+.skills .skills-content .right .css::before{
+    width: 70%;
+}
+
+.skills .skills-content .right .js::before{
+    width: 50%;
+}
+
+.skills .skills-content .right .java::before{
+    width: 80%;
+}
+
+.skills .skills-content .right .kotlin::before{
+    width: 40%;
+}
 
 /* responsive media query start */
 
@@ -337,9 +403,7 @@ section .title::after{
 
     .home .home-content .text2{
         font-size: 70px;
-    }
-
-    
+    }    
 
     .home .home-content .text3{
         font-size: 35px;
@@ -362,6 +426,17 @@ section .title::after{
     .about .about-content .right{
         flex: 100%;
     }
+
+    .project .project-content .card{
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .project .project-content .card{
+        width: 100%;
+    }
 }
 
 @media (max-width: 470px) {
@@ -373,4 +448,6 @@ section .title::after{
         height: 350px;
         width: 225px;
     }
+
+    
 }
