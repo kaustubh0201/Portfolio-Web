@@ -361,14 +361,11 @@ section .title::after{
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
+.teams .carousel .card:hover{
+    background: crimson;
 }
 
 .teams .carousel .card .box{
@@ -378,6 +375,29 @@ section .title::after{
     justify-content: center;
 }
 
+.teams .carousel .card:hover .box{
+    transform: scale(1.05x);
+}
+
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+
+}
+
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
 
 /* responsive media query start */
 
